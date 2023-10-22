@@ -5,14 +5,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { AprensentacaoComponent } from './main/aprensentacao/aprensentacao.component';
-import { LazyLoadingComponent } from './main/features/lazy-loading/lazy-loading.component';
-import { SearchbarComponent } from './main/features/searchbar/searchbar.component';
-import { InfiniteScrollingComponent } from './main/features/infinite-scrolling/infinite-scrolling.component';
-import { ApisComponent } from './main/features/apis/apis.component';
+import { LazyLoadingComponent } from './main/carrossel/features/lazy-loading/lazy-loading.component';
+import { SearchbarComponent } from './main/carrossel/features/searchbar/searchbar.component';
+import { InfiniteScrollingComponent } from './main/carrossel/features/infinite-scrolling/infinite-scrolling.component';
+import { ApisComponent } from './main/carrossel/features/apis/apis.component';
 import { MetodologiaComponent } from './main/metodologia/metodologia.component';
-import { FeaturesComponent } from './main/features/features.component';
-import { CarrosselComponent } from './main/features/carrossel/carrossel.component';
-import { SlickCarouselComponent, SlickCarouselModule } from 'ngx-slick-carousel';
+import { FeaturesComponent } from './main/carrossel/features/features.component';
+import { ItemCarrosselComponent } from './main/carrossel/item-carrossel/item-carrossel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { CarrosselComponent } from './main/carrossel/carrossel.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { SlickCarouselComponent, SlickCarouselModule } from 'ngx-slick-carousel'
     ApisComponent,
     MetodologiaComponent,
     FeaturesComponent,
+    ItemCarrosselComponent,
     CarrosselComponent,
   ],
   imports: [
-    SlickCarouselModule,
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

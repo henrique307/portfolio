@@ -6,6 +6,4 @@ import { HttpClient } from '@angular/common/http'
   templateUrl: './infinite-scrolling.component.html',
   styleUrls: ['./infinite-scrolling.component.css']
 })
-export class InfiniteScrollingComponent {
-  constructor(private readonly httpClient: HttpClient) {}
-}
+export class InfiniteScrollingComponent {}
