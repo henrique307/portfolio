@@ -12,13 +12,15 @@ export class CarrosselComponent implements OnInit{
   readonly projetos: Projeto[] = [
     {
       titulo: 'Lazy Loading',
+      classe: "lazyLoading",
       descricao: "Descrição lazy loading",
       // alt: "lazy loading demo",
       componente: LazyLoadingComponent
     },
     {
-      titulo: 'infinite scrolling',
+      titulo: 'Infinite Scrolling',
       descricao: "Descrição infinite scrolling",
+      classe: "lazyLoading",
       // alt: "infinite scrolling demo",
       componente: InfiniteScrollingComponent,
     }
