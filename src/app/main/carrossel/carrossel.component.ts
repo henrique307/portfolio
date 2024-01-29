@@ -11,19 +11,19 @@ import { Projeto } from './item-carrossel/utils/projeto.interface';
 export class CarrosselComponent implements OnInit{
   readonly projetos: Projeto[] = [
     {
-      titulo: 'Lazy Loading',
-      classe: "lazyLoading",
-      descricao: "Descrição lazy loading",
-      // alt: "lazy loading demo",
-      componente: LazyLoadingComponent
-    },
-    {
       titulo: 'Infinite Scrolling',
-      descricao: "Descrição infinite scrolling",
+      descricao: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa aperiam corporis obcaecati sapiente dolor magni quae, tenetur perspiciatis voluptates doloremque error consequuntur ipsam sed minima nostrum quos temporibus non quidem.",
       classe: "lazyLoading",
       // alt: "infinite scrolling demo",
       componente: InfiniteScrollingComponent,
-    }
+    },
+    {
+      titulo: 'Lazy Loading',
+      classe: "lazyLoading",
+      descricao: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa aperiam corporis obcaecati sapiente dolor magni quae, tenetur perspiciatis voluptates doloremque error consequuntur ipsam sed minima nostrum quos temporibus non quidem.",
+      // alt: "lazy loading demo",
+      componente: LazyLoadingComponent
+    },
   ]
 
   selectedIndex: number = 0;
