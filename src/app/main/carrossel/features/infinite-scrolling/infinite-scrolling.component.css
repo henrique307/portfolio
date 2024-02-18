@@ -1,0 +1,45 @@
+.search-bar {
+    padding: 5px 13px;
+    border-style: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+    
+.search-bar:focus {
+    outline: none;
+    caret-color: rgb(160, 160, 160);
+    color: rgb(160, 160, 160);
+}
+
+.gato-item {
+    list-style: none;
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.gatos-container {
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.carrossel_item {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+.section-gatos-list {
+    padding-left: 15px;
+    height: 60%;
+    overflow-y: scroll;
+    overflow-x: visible;
+}
+
+.section-gatos-list::-webkit-scrollbar {
+    display: block;
+}

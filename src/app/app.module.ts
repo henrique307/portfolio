@@ -15,6 +15,7 @@ import { CarrosselComponent } from './main/components/carrossel/carrossel.compon
 import { ObserverComponent } from './main/components/carrossel/components/features/components/infinite-scrolling/components/observer/observer.component';
 import { IntersectionObserverModule } from 'ngx-intersection-observer';
 import { IntegracoesComponent } from './main/components/carrossel/components/features/components/integracoes/integracoes.component';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
