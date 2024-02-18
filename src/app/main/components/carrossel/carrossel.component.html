@@ -1,0 +1,28 @@
+<section class="carrossel_container">
+    <app-item-carrossel *ngFor="let projeto of projetos;let i=index"
+        [projeto]="projeto"
+        [ngClass]="{'itemAtivo': selectedIndex === i }"
+        class="fade item_carrossel"
+    />
+
+    <div class="carrossel_ponto_container">
+        <span *ngFor="let ponto of projetos; let i = index"
+            class="ponto"
+            [ngClass]="{'ativo': selectedIndex === i }"
+            (click)="selecionaProjeto(i)"
+        ></span>
+    </div>
+
+    <div class="setas_container">
+        <div class="btn_carrossel btn_voltar" (click)="onVoltar()">
+            <i class="fas fa-arrow-circle-left icon_carrossel icon_voltar">
+                &LeftArrow;
+            </i>
+        </div>
+        <div class="btn_carrossel btn_avancar" (click)="onAvancar()">
+            <i class="fas fa-arrow-circle-left icon_carrossel icon_avancar">
+                &rightarrow;
+            </i>
+        </div>
+    </div>
+</section>

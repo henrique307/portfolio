@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
-import { AprensentacaoComponent } from './main/aprensentacao/aprensentacao.component';
-import { LazyLoadingComponent } from './main/carrossel/features/lazy-loading/lazy-loading.component';
-import { SearchbarComponent } from './main/carrossel/features/searchbar/searchbar.component';
-import { InfiniteScrollingComponent } from './main/carrossel/features/infinite-scrolling/infinite-scrolling.component';
-import { ApisComponent } from './main/carrossel/features/apis/apis.component';
-import { MetodologiaComponent } from './main/metodologia/metodologia.component';
-import { FeaturesComponent } from './main/carrossel/features/features.component';
-import { ItemCarrosselComponent } from './main/carrossel/item-carrossel/item-carrossel.component';
+import { AprensentacaoComponent } from './main/components/aprensentacao/aprensentacao.component';
+import { MetodologiaComponent } from './main/components/metodologia/metodologia.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
-import { CarrosselComponent } from './main/carrossel/carrossel.component';
+import { AppsWeb } from './main/components/carrossel/components/features/components/infinite-scrolling/web.component';
+import { ApisComponent } from './main/components/carrossel/components/features/components/apis/apis.component';
+import { FeaturesComponent } from './main/components/carrossel/components/features/features.component';
+import { ItemCarrosselComponent } from './main/components/carrossel/components/item-carrossel/item-carrossel.component';
+import { CarrosselComponent } from './main/components/carrossel/carrossel.component';
+import { ObserverComponent } from './main/components/carrossel/components/features/components/infinite-scrolling/components/observer/observer.component';
+import { IntersectionObserverModule } from 'ngx-intersection-observer';
+import { IntegracoesComponent } from './main/components/carrossel/components/features/components/integracoes/integracoes.component';
 
 @NgModule({
   declarations: [
@@ -22,19 +22,20 @@ import { CarrosselComponent } from './main/carrossel/carrossel.component';
     HeaderComponent,
     MainComponent,
     AprensentacaoComponent,
-    LazyLoadingComponent,
-    SearchbarComponent,
-    InfiniteScrollingComponent,
+    AppsWeb,
     ApisComponent,
     MetodologiaComponent,
     FeaturesComponent,
     ItemCarrosselComponent,
     CarrosselComponent,
+    ObserverComponent,
+    IntegracoesComponent,
   ],
   imports: [
+    RouterModule,
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule,
+    IntersectionObserverModule
   ],
   providers: [],
   bootstrap: [AppComponent]

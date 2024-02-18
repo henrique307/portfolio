@@ -1,0 +1,17 @@
+<div>
+    <!-- <input type="search" name="pesquisa" id="search-bar"> -->
+    <ng-container>
+        <section class="infinite-scrolling-container">
+            <ul class="poke-list">
+                <li class="poke-card" *ngFor="let pokemon of pokemons">
+                    <span class="pokemon-name">{{pokemon.name}}</span>
+                    <img [src]="pokemon.sprites['front_default']" alt="" srcset="">
+                </li>
+            </ul>
+            <app-observer (pageEmiter)="recievePage($event)"></app-observer>
+        </section>
+    </ng-container>
+    <!-- <ng-template #elseTemplate>
+        <h1>carregando...</h1>
+    </ng-template> -->
+</div>

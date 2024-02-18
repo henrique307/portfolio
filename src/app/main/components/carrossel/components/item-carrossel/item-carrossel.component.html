@@ -1,0 +1,7 @@
+<div class="projeto" >
+    <h2 class="projeto-title">{{ projeto.titulo }}</h2>
+    <p class="projeto-description">{{ projeto.descricao }}</p>
+    <section class="feature-container">
+        <ng-container *ngComponentOutlet="projeto.componente"></ng-container>
+    </section>
+</div>

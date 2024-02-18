@@ -1,0 +1,14 @@
+.projeto-title {
+    padding: 10px 0;
+}
+
+.projeto-description {
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.projeto {
+    margin: 0 auto;
+    width: 95%;
+}
