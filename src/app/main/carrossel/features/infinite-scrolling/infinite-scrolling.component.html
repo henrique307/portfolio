@@ -1,9 +1,0 @@
-<div class="carrossel_item">
-    <input type="search" name="pesquisa" class="search-bar">
-    <section *ngIf="gatos.length" class="section-gatos-list">
-        <ul class="gatos-container">
-            <li class="gato-item" *ngFor="let gato of gatos;let i = index" [style.background-image]="url('+gato.link+')'">
-            </li>
-        </ul>
-    </section>
-</div>

@@ -13,7 +13,7 @@ export class CarrosselComponent implements OnInit{
   readonly projetos: Projeto[] = [
     {
       titulo: "Aplicações Web",
-      descricao: "Experiencia na criação de aplicações web consumindo APIs externas (PokeAPI nesse caso) apresentando os dados de forma consisa e utilizando as melhores práticas de desenvolvimento",
+      descricao: "Experiencia na criação de aplicações web consumindo APIs externas (PokeAPI nesse caso) apresentando os dados de forma concisa e utilizando as melhores práticas de desenvolvimento",
       classe: "infiniteScrolling",
       componente: AppsWeb,
     },
